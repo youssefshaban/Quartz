@@ -1,0 +1,20 @@
+spring:
+  quartz:
+    properties:
+      org:
+        quartz:
+          scheduler:
+            instanceId: AUTO
+          threadPool:
+            threadCount: 5
+
+
+#    jdbc:
+#      initialize-schema: always
+    job-store:type: jdbc
+
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:db
+    username: q
+    password: q
+    driver-class-name: oracle.jdbc.OracleDriver
